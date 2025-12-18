@@ -21,16 +21,16 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
+      - name: Setup pnpm
+        uses: pnpm/action-setup@v2
+        with:
+          version: 8
+
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: "20"
           cache: 'pnpm'
-
-      - name: Setup pnpm
-        uses: pnpm/action-setup@v3
-        with:
-          version: 8
 
       - name: Install dependencies
         run: pnpm install
@@ -38,8 +38,6 @@ jobs:
       - name: Build
         run: pnpm build
         env:
-          # Set base path for GitHub Pages if not at root domain
-          # VITE_BASE_PATH: /repo-name/
           NODE_ENV: production
 
       - name: Upload artifact
