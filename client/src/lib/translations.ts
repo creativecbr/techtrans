@@ -47,7 +47,7 @@ export const translations = {
       badge: "Bezpieczeństwo i Kontrola",
       titleLine1: "Technologia, która",
       titleLine2: "nie zawodzi",
-      description: "W TechTrans wiemy, że informacja jest równie ważna jak towar. Nasze systemy zapewniają pełną transparentność procesów magazynowych.",
+      description: "W Techstep Transport wiemy, że informacja jest równie ważna jak towar. Nasze systemy zapewniają pełną transparentność procesów magazynowych.",
       features: [
         "Zdalne zarządzanie terminalami mobilnymi (MDM)",
         "Szyfrowana komunikacja wewnątrzmagazynowa",
@@ -64,7 +64,7 @@ export const translations = {
     cta: {
       titleLine1: "Gotowy na optymalizację",
       titleLine2: "swojego magazynu?",
-      description: "Dołącz do liderów rynku, którzy zaufali TechTrans. Skontaktuj się z nami i otrzymaj dedykowaną wycenę w 24h.",
+      description: "Dołącz do liderów rynku, którzy zaufali Techstep Transport. Skontaktuj się z nami i otrzymaj dedykowaną wycenę w 24h.",
       button: "Skontaktuj się z nami",
     },
     footer: {
@@ -80,7 +80,7 @@ export const translations = {
         logistics: "Logistyka",
         consulting: "Consulting IT",
       },
-      rights: "© 2024 TechTrans Logistics. Wszelkie prawa zastrzeżone.",
+      rights: "© 2024 Techstep Transport. Wszelkie prawa zastrzeżone.",
     },
   },
   en: {
@@ -131,7 +131,7 @@ export const translations = {
       badge: "Security & Control",
       titleLine1: "Technology that",
       titleLine2: "never fails",
-      description: "At TechTrans, we know information is as important as the cargo. Our systems ensure full transparency of warehouse processes.",
+      description: "At Techstep Transport, we know information is as important as the cargo. Our systems ensure full transparency of warehouse processes.",
       features: [
         "Remote Mobile Device Management (MDM)",
         "Encrypted intra-warehouse communication",
@@ -148,7 +148,7 @@ export const translations = {
     cta: {
       titleLine1: "Ready to optimize",
       titleLine2: "your warehouse?",
-      description: "Join market leaders who trusted TechTrans. Contact us and get a dedicated quote within 24h.",
+      description: "Join market leaders who trusted Techstep Transport. Contact us and get a dedicated quote within 24h.",
       button: "Contact Us",
     },
     footer: {
@@ -164,7 +164,7 @@ export const translations = {
         logistics: "Logistics",
         consulting: "IT Consulting",
       },
-      rights: "© 2024 TechTrans Logistics. All rights reserved.",
+      rights: "© 2024 Techstep Transport. All rights reserved.",
     },
   },
 };

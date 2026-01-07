@@ -39,7 +39,7 @@ export default function Home() {
               <span className="text-primary-foreground font-bold font-display skew-x-[10deg]">TT</span>
             </div>
             <span className="text-2xl font-bold font-display tracking-wider uppercase">
-              Tech<span className="text-primary">Trans</span>
+              Techstep <span className="text-primary">Transport</span>
             </span>
           </div>
           <div className="hidden md:flex items-center gap-8 font-medium font-display tracking-wide text-sm uppercase">
@@ -79,7 +79,7 @@ export default function Home() {
                       <span className="text-primary-foreground font-bold font-display skew-x-[10deg] text-xs">TT</span>
                     </div>
                     <span className="text-lg font-bold font-display tracking-wider uppercase">
-                      Tech<span className="text-primary">Trans</span>
+                      Techstep <span className="text-primary">Transport</span>
                     </span>
                   </div>
                   <DrawerClose asChild>
@@ -337,7 +337,7 @@ export default function Home() {
                 <span className="text-primary-foreground font-bold font-display skew-x-[10deg] text-xs">TT</span>
               </div>
               <span className="text-xl font-bold font-display tracking-wider uppercase">
-                Tech<span className="text-primary">Trans</span>
+                Techstep <span className="text-primary">Transport</span>
               </span>
             </div>
             <p className="text-muted-foreground">
