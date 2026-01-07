@@ -2,7 +2,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Separator } from "@/components/ui/separator";
 import { translations, type Language } from "@/lib/translations";
-import { ArrowRight, Box, Globe, ShieldCheck, Truck, Wifi } from "lucide-react";
+import { ArrowRight, Box, Globe, ShieldCheck, Truck, Wifi, Menu, X } from "lucide-react";
+import { Drawer, DrawerContent, DrawerTrigger, DrawerClose } from "@/components/ui/drawer";
 import { useEffect, useState } from "react";
 
 export default function Home() {
@@ -55,6 +56,66 @@ export default function Home() {
             <Button variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-none skew-x-[-10deg]">
               <span className="skew-x-[10deg]">{t.nav.clientZone}</span>
             </Button>
+          </div>
+          {/* Mobile actions: language toggle + menu */}
+          <div className="flex md:hidden items-center gap-2">
+            <Button
+              variant="ghost"
+              onClick={toggleLang}
+              className="font-bold hover:bg-primary/10 hover:text-primary"
+            >
+              {lang === "pl" ? "EN" : "PL"}
+            </Button>
+            <Drawer direction="right">
+              <DrawerTrigger asChild>
+                <Button variant="outline" size="icon" aria-label="Open menu">
+                  <Menu className="w-5 h-5" />
+                </Button>
+              </DrawerTrigger>
+              <DrawerContent className="p-0 w-full sm:max-w-sm">
+                <div className="border-b p-4 flex items-center justify-between">
+                  <div className="flex items-center gap-2">
+                    <div className="h-6 w-6 bg-primary flex items-center justify-center skew-x-[-10deg]">
+                      <span className="text-primary-foreground font-bold font-display skew-x-[10deg] text-xs">TT</span>
+                    </div>
+                    <span className="text-lg font-bold font-display tracking-wider uppercase">
+                      Tech<span className="text-primary">Trans</span>
+                    </span>
+                  </div>
+                  <DrawerClose asChild>
+                    <Button variant="ghost" size="icon" aria-label="Close menu">
+                      <X className="w-5 h-5" />
+                    </Button>
+                  </DrawerClose>
+                </div>
+                <div className="p-4 space-y-3">
+                  <a href="#services" className="block px-3 py-2 rounded-sm text-sm font-display uppercase hover:bg-accent hover:text-accent-foreground">
+                    {t.nav.services}
+                  </a>
+                  <a href="#technology" className="block px-3 py-2 rounded-sm text-sm font-display uppercase hover:bg-accent hover:text-accent-foreground">
+                    {t.nav.technology}
+                  </a>
+                  <a href="#about" className="block px-3 py-2 rounded-sm text-sm font-display uppercase hover:bg-accent hover:text-accent-foreground">
+                    {t.nav.about}
+                  </a>
+                  <div className="pt-2 flex gap-2">
+                    <Button 
+                      variant="outline" 
+                      className="border-primary text-primary hover:bg-primary hover:text-primary-foreground rounded-none skew-x-[-10deg] w-full"
+                    >
+                      <span className="skew-x-[10deg]">{t.nav.clientZone}</span>
+                    </Button>
+                    <Button 
+                      variant="ghost" 
+                      onClick={toggleLang} 
+                      className="font-bold hover:bg-primary/10 hover:text-primary"
+                    >
+                      {lang === "pl" ? "EN" : "PL"}
+                    </Button>
+                  </div>
+                </div>
+              </DrawerContent>
+            </Drawer>
           </div>
         </div>
       </nav>
